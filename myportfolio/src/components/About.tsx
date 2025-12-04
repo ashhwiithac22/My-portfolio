@@ -9,13 +9,13 @@ const About = () => {
     software: {
       title: 'Software Development',
       icon: <FaCode />,
-      file: 'public/Ashwitha C_Resume.pdf',
+      file: 'Ashwitha C_Resume.pdf',
       color: 'primary'
     },
     data: {
       title: 'Data Science',
       icon: <FaDatabase />,
-      file: 'public/Ashwitha.C_Resume.pdf',
+      file: 'Ashwitha.C_Resume.pdf',
       color: 'info'
     }
   };
