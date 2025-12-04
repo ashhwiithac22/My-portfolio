@@ -1,99 +1,149 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
-import { FaTrophy, FaUsers, FaCalendarAlt, FaCode, FaMedal, FaFilePdf, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaTrophy, FaUsers, FaCalendarAlt, FaMedal, FaFilePdf, FaMapMarkerAlt, FaFileImage, FaCogs } from 'react-icons/fa';
 
 const Hackathons = () => {
   const hackathons = [
     {
-      title: "Smart India Hackathon 2024",
-      organizer: "Government of India",
-      date: "March 2024",
-      location: "National Level",
+      title: "Google Cloud Agentic AI Day Hackathon",
+      organizer: "Google Cloud & Hack2skill",
+      date: "September 2025",
+      location: "Online/National Level",
       icon: <FaTrophy />,
-      description: "Participated in the national-level Smart India Hackathon, working on developing innovative solutions for real-world challenges. Collaborated with a team to create a prototype addressing a significant problem statement within the given timeframe.",
-      skills: ["Problem Solving", "Team Collaboration", "Rapid Prototyping", "Presentation", "Innovation"],
-      achievement: "Certificate of Participation",
-      pdfLink: "/hackathon-certificate.pdf" // Replace with your actual filename
+      description: "Developed and submitted an innovative AI agent concept aimed at solving real-world challenges through Agentic AI",
+      skills: ["Agentic AI", "Google Cloud AI", "Problem Solving", "Prototyping"],
+      achievement: "Participation Recognition",
+      pdfLink: "/AgenticAI.png",
+      fileType: "image"
+    },
+    {
+      title: "EY Techathon 6.0 – Predictive Maintenance AI Agent",
+      organizer: "EY (Ernst & Young) & Industry Partners",
+      date: "September – November 2025",
+      location: "Online / National Level",
+      icon: <FaCogs />,
+      description: "Designed an Agentic AI system to predict vehicle breakdowns and provide feedback to improve reliability and customer experience.",
+      skills: ["Agentic AI", "Predictive Analytics", "AI Automation","Team Collaboration"],
+      achievement: "Shortlisted for Round2",
+      pdfLink: "/ey-techathon-6.0-predictive-maintenance.pdf",
+      fileType: "pdf"
     }
   ];
 
   return (
     <section id="hackathons" className="py-5">
       <Container>
-        <Row className="justify-content-center mb-5">
+        <Row className="justify-content-center mb-4">
           <Col lg={8} className="text-center">
-            <h2 className="display-5 fw-bold mb-3">Hackathons</h2>
+            <h2 className="display-5 fw-bold mb-3">
+              <FaTrophy className="me-2" style={{ color: '#007bff' }} /> 
+              Hackathons
+            </h2>
             <p className="lead text-muted">
               Competitive coding events and innovation challenges
             </p>
           </Col>
         </Row>
         
-        <Row className="justify-content-center">
+        <Row className="g-4">
           {hackathons.map((hackathon, index) => (
-            <Col lg={8} key={index} className="mb-4">
-              <Card className="h-100 border-0 shadow-sm card-hover">
+            <Col lg={6} md={12} key={index}>
+              <Card className="h-100 border-0 shadow-sm card-hover" style={{ 
+                borderTop: '4px solid #007bff',
+                borderRadius: '10px'
+              }}>
                 <Card.Body className="p-4">
-                  <Row className="align-items-center">
-                    <Col md={3} className="text-center mb-3 mb-md-0">
-                      <div className="text-primary mb-3" style={{ fontSize: '4rem' }}>
-                        {hackathon.icon}
-                      </div>
-                      <Badge bg="warning" text="dark" className="px-3 py-2 fs-6">
-                        <FaMedal className="me-2" />
-                        {hackathon.achievement}
-                      </Badge>
-                    </Col>
-                    
-                    <Col md={9}>
-                      <Card.Title className="fw-bold mb-2">{hackathon.title}</Card.Title>
-                      
-                      <div className="mb-3">
-                        <Badge bg="primary" className="me-2 mb-2">
+                  <div className="d-flex align-items-start mb-3">
+                    <div className="me-3" style={{ fontSize: '2.5rem', color: '#007bff' }}>
+                      {hackathon.icon}
+                    </div>
+                    <div>
+                      <Card.Title className="fw-bold mb-1" style={{ color: '#007bff' }}>
+                        {hackathon.title}
+                      </Card.Title>
+                      <div className="d-flex flex-wrap align-items-center mb-2">
+                        <Badge className="me-2 mb-1" style={{ 
+                          backgroundColor: '#007bff', 
+                          color: 'white',
+                          border: 'none'
+                        }}>
                           <FaCalendarAlt className="me-1" /> {hackathon.date}
                         </Badge>
-                        <Badge bg="info" className="me-2 mb-2">
+                        <Badge className="me-2 mb-1" style={{ 
+                          backgroundColor: '#0dcaf0', 
+                          color: 'white',
+                          border: 'none'
+                        }}>
                           <FaUsers className="me-1" /> {hackathon.organizer}
                         </Badge>
-                        <Badge bg="secondary" className="mb-2">
+                        <Badge className="mb-1" style={{ 
+                          backgroundColor: '#6c757d', 
+                          color: 'white',
+                          border: 'none'
+                        }}>
                           <FaMapMarkerAlt className="me-1" /> {hackathon.location}
                         </Badge>
                       </div>
-                      
-                      <Card.Text className="text-muted mb-3">
-                        {hackathon.description}
-                      </Card.Text>
-                      
-                      <div className="mb-3">
-                        <h6 className="fw-bold mb-2">Skills Demonstrated:</h6>
-                        {hackathon.skills.map((skill, skillIndex) => (
-                          <Badge 
-                            key={skillIndex} 
-                            bg="outline-warning" 
-                            className="me-1 mb-1"
-                            style={{ 
-                              color: '#ffc107', 
-                              border: '1px solid #ffc107',
-                              backgroundColor: 'transparent'
-                            }}
-                          >
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                      
-                      <div className="mt-3">
-                        <Button 
-                          variant="outline-warning" 
-                          size="sm" 
-                          href={hackathon.pdfLink} 
-                          target="_blank"
+                    </div>
+                  </div>
+                  
+                  <Card.Text className="text-muted mb-3">
+                    {hackathon.description}
+                  </Card.Text>
+                  
+                  <div className="mb-3">
+                    <h6 className="fw-bold mb-2" style={{ color: '#007bff' }}>Skills Demonstrated:</h6>
+                    <div className="d-flex flex-wrap">
+                      {hackathon.skills.map((skill, skillIndex) => (
+                        <Badge 
+                          key={skillIndex} 
+                          className="me-1 mb-1"
+                          style={{ 
+                            backgroundColor: '#007bff',
+                            color: 'white',
+                            fontWeight: '500',
+                            border: 'none'
+                          }}
                         >
-                          <FaFilePdf className="me-2" /> View Certificate
-                        </Button>
-                      </div>
-                    </Col>
-                  </Row>
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="d-flex justify-content-between align-items-center mt-3">
+                    <div className="d-flex align-items-center">
+                      <Badge className="px-3 py-2" style={{ 
+                        backgroundColor: '#0056b3',
+                        color: 'white',
+                        fontWeight: '600',
+                        border: 'none'
+                      }}>
+                        <FaMedal className="me-2" />
+                        {hackathon.achievement}
+                      </Badge>
+                    </div>
+                    
+                    <Button 
+                      variant="primary"
+                      size="sm"
+                      href={hackathon.pdfLink} 
+                      target="_blank"
+                      style={{ 
+                        backgroundColor: '#007bff',
+                        borderColor: '#007bff',
+                        color: 'white',
+                        fontWeight: '500'
+                      }}
+                    >
+                      View Certificate
+                      {hackathon.fileType === "pdf" ? (
+                        <FaFilePdf className="ms-2" />
+                      ) : (
+                        <FaFileImage className="ms-2" />
+                      )}
+                    </Button>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
