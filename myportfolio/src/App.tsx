@@ -8,10 +8,13 @@ import Interests from './components/Interests';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Hackathons from './components/Hackathons';      // Add this
+import Publications from './components/Publications';  // Add this
 import Certificates from './components/Certificates';
 import CodingProfiles from './components/CodingProfiles';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
 
 const App = () => {
   return (
@@ -23,6 +26,8 @@ const App = () => {
       <Skills />
       <Experience />
       <Projects />
+      <Hackathons />     {/* Add this line - shows after Projects */}
+      <Publications />
       <Certificates />
       <CodingProfiles />
       <Contact />
