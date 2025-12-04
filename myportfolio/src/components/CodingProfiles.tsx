@@ -4,13 +4,14 @@ import { SiHackerrank, SiGeeksforgeeks, SiLeetcode, SiCodechef, SiHackerearth } 
 
 const CodingProfiles = () => {
   const profiles = [
-    {
-      platform: "HackerRank",
-      icon: <SiHackerrank />,
-      username: "@ashwithacchandru",
-      link: "https://www.hackerrank.com/profile/ashwithacchandru",
-      description: "Practiced and solved multiple coding problems in Python and SQL, building strong foundations in programming and database queries.",
-      color: "#2ec866"
+
+      {
+      platform: "LeetCode",
+      icon: <SiLeetcode />,
+      username: "@OOLY6Vc2Xe",
+      link: "https://leetcode.com/u/OOLY6Vc2Xe/",
+      description: "Consistent problem solver with a strong focus on algorithms, SQL queries",
+      color: "#ffa500"
     },
     {
       platform: "GeeksforGeeks",
@@ -20,14 +21,15 @@ const CodingProfiles = () => {
       description: "Completed multiple problem-solving exercises on GeeksforGeeks, focusing on Python basics, arrays, strings, loops, and logical reasoning to strengthen core programming skills.",
       color: "#0f7b0f"
     },
-    {
-      platform: "LeetCode",
-      icon: <SiLeetcode />,
-      username: "@OOLY6Vc2Xe",
-      link: "https://leetcode.com/u/OOLY6Vc2Xe/",
-      description: "Consistent problem solver with a strong focus on algorithms, SQL queries",
-      color: "#ffa500"
+        {
+      platform: "HackerRank",
+      icon: <SiHackerrank />,
+      username: "@ashwithacchandru",
+      link: "https://www.hackerrank.com/profile/ashwithacchandru",
+      description: "Practiced and solved multiple coding problems in Python and SQL, building strong foundations in programming and database queries.",
+      color: "#2ec866"
     }
+  
   ];
 
   return (

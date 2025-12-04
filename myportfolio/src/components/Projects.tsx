@@ -5,26 +5,61 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
+      title: "CodeBuddy Learning Platform",
+      description: "AI powered learning and Interview preparation platform",
+      technologies: ["Angular", "Typescript", "Node.js", "Express", "MongoDB Atlas", "Gemini API", "JWT"],
+      liveLink: "https://codebuddy-backend-oind.onrender.com/",
+      githubLink: "https://github.com/ashhwiithac22/codebuddyapp",
+    },
+
+    {
+      title: "Livelink- Blood Bank Management Application",
+      description: "A full web application designed to streamline the blood donation and management process.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+      liveLink: "https://lifelink-bloodbank.vercel.app/",
+      githubLink: "https://github.com/ashhwiithac22/lifelink-bloodbank",
+    },
+
+    {
       title: "Financial AI Analytics Platform",
       description: "Financial Analytics AI Platform — Python-based Streamlit application for options pricing, implied volatility, live financial data analysis, and an AI-powered finance assistant.",
-      technologies: ["Python", "Pandas", "Numpy", "Streamlit"],
+      technologies: ["Python", "Pandas", "Numpy", "yfinance","jax", "Streamlit"],
       liveLink: "https://financial-ai--analytics-platform.streamlit.app/",
       githubLink: "https://github.com/ashhwiithac22/Financial-AI--Analytics-Platform",
     },
+
+     {
+      title: "Phishing URL Detection Application",
+      description: "A phishing URL detector web app using machine learning algorithms (Logistic Regression, Linear Regression, K-Means) with a Streamlit interface for real-time predictions.",
+      technologies: ["Python", "Cross Validation", "Xgboost", "SVM","Streamlit"],
+      liveLink:"https://phishing-url-classification.streamlit.app/",
+      githubLink: "https://github.com/ashhwiithac22/phishing-url-detector-application",
+    },
+    
+      {
+      title: "SmartCivic Complaint Analyzer Using NLP",
+      description: "A comprehensive platform for citizens to report civic issues with real-time NLP analysis for faster municipal response ",
+      technologies: ["Python", "TF-IDF", "Scikit-learn", "Multinomial Naive Bayes","Plotly", "TextBlob"],
+      liveLink: "https://complaint-analyzer-using-nlp.streamlit.app/",
+      githubLink: "https://github.com/ashhwiithac22/Smart-Civic-Complaint-Analyzer-with-NLP",
+    },
+
+      {
+      title: "Student Dropout Prediction Using ML",
+      description: "A comprehensive Machine Learning system that predicts student dropout risk using advanced analytics and predictive modeling.",
+      technologies: ["Python", "Pandas", "Numpy", "Streamlit", "Boosting", "Random Forest", "K-Nearest Neighbors", "SVM"],
+      liveLink: "https://student-dropout-prediction-ml.streamlit.app/",
+      githubLink: "https://github.com/ashhwiithac22/student-dropout-prediction-ml",
+    },
+
     {
       title: "Ride Share Optimizer",
       description: "Ride Sharing and Trip Planner.A Python + Streamlit app that uses graph algorithms to optimize cost-efficient, multi-stop and ride-sharing routes.",
-      technologies: ["Python", "Pandas", "Streamlit", "Advanced Data Structures"],
+      technologies: ["Python", "Pandas", "BFS", "Prim's", "Branch and Bound", "Streamlit", "Advanced Data Structures"],
       liveLink: "https://rideshareoptimizer.streamlit.app/",
       githubLink: "https://github.com/ashhwiithac22/RideShare-Optimizer",
     },
-    {
-      title: "Phishing URL Detection Application",
-      description: "A phishing URL detector web app using machine learning algorithms (Logistic Regression, Linear Regression, K-Means) with a Streamlit interface for real-time predictions.",
-      technologies: ["Python", "Scikit-learn", "Logistic Regression", "Kmeans","Streamlit"],
-      liveLink:"https://phishing-url-detector-application.streamlit.app/",
-      githubLink: "https://github.com/ashhwiithac22/phishing-url-detector-application",
-    },
+  
     {
       title: "Customer Relationship Management",
       description: "A Java Swing–based CRM desktop application with MySQL backend to manage customers, sales orders, and transactions through a role-based user interface",
