@@ -5,7 +5,7 @@
 
 ## Live Demo
 
-[View Live Site](https://ashwithasportfolioreact-e4m2eccaq-ashwitha-cs-projects.vercel.app)
+[View Live Site](https://ashwithaportfolio.netlify.app/)
 
 ## Features
 
